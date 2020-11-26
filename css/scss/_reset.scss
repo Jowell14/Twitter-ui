@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 100% $font-stack;
+    background: $primary-color !important;
+    color: $color !important;
+    font-size: $font-size !important;
+}

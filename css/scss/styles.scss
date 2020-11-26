@@ -1,0 +1,223 @@
+@import 'config';
+@import 'reset';
+@import 'utilities';
+@import 'button';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 100% $font-stack;
+    background: $primary-color !important;
+    color: $color !important;
+    font-size: $font-size !important;
+}
+
+.left-nav,
+.middle-section,
+.right-nav {
+    height: 100vh;
+}
+
+// RULES FOR LEFT NAVIGATION
+.left-nav {
+    // border-right: 1px solid $dark-gray !important;
+    border-right: 1px solid $border-color !important;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    position: relative !important;
+    // left: 0px;
+    // top: 10px;
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin: 10px 0px 20px 50px;
+    }
+    .left-nav-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        text-align: center;
+        ul {
+            // display: flex;
+            margin-left: 50px;
+            margin-bottom: 10px;
+            list-style: none;
+            padding: 0 !important;
+            li {
+                display: flex;
+                margin-bottom: 15px;
+                align-items: center;
+            }
+            i {
+                margin-right: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: $color;
+                margin-left: 15px;
+                font-weight: 700 !important;
+                font-size: 20px;
+                text-align: center;
+                transition: color ease-in 0.1s;
+                &:hover {
+                    color: $twitter-btn;
+                }
+            }
+        }
+        .center {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .account-switcher-btn {
+            @extend %btn;
+        }
+    }
+    .account-profile {
+        display: flex;
+        width: 70%;
+        position: absolute;
+        bottom: 20px;
+        justify-content: space-between;
+        margin-left: 40px;
+        padding: 10px;
+        border-radius: 25px;
+        height: 50px;
+        &:hover {
+            background-color: lighten($primary-color, 10%) !important;
+        }
+        .account-profile-details {
+            display: flex;
+            .account-profile-pic img {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .profile-name {
+                margin-left: 10px;
+                h5 {
+                    margin-bottom: 0;
+                    font-weight: bolder !important;
+                    font-size: 16px;
+                }
+                p {
+                    font-weight: 600 !important;
+                    font-size: 14px;
+                    margin-top: 0;
+                    color: $body;
+                }
+            }
+        }
+    }
+}
+
+// LEFT NAVIGATION ENDS
+// RULE SET FOR MIDDLE SECTION
+.middle-section {
+    border-right: 1px solid $border-color !important;
+    padding: 0 !important;
+    .middle-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 3rem;
+        border-bottom: 1px solid $border-color !important;
+        .middle-heading-text {
+            color: $color;
+            font-weight: bolder !important;
+            font-size: 18px;
+            text-align: center;
+            margin-left: 15px;
+        }
+        .star {
+            margin-right: 15px;
+        }
+    }
+}
+
+//MIDDLE SECTION END
+//RULE SET FOR RIGHT NAVIGATION
+.right-nav {
+    margin-top: 5px;
+    padding: 0 64px 0 40px !important;
+    // search
+    .search-quinera {
+        position: relative;
+        .search {
+            background-color: $input;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 60px;
+            color: $color;
+            font-size: 14px;
+            width: 100%;
+        }
+        i {
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            color: $color;
+        }
+    }
+}
+
+// Trends section
+.trends,
+.who-to-follow {
+    @extend %trend-style;
+    .trends-header,
+    .who-to-follow-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid $border-color;
+        padding: 10px 13px 5px;
+        h5 {
+            letter-spacing: 1;
+            font-weight: 800;
+            font-size: 20px;
+            color: $color;
+        }
+    }
+    .trending-topics,
+    .show-more,
+    .suggestions {
+        @extend %right-style;
+        p {
+            color: $dark-gray;
+            font-size: 13px;
+            margin-bottom: 0;
+            font-weight: 600;
+        }
+        h5 {
+            font-weight: 800;
+            color: $color;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+                color: $twitter-btn
+            }
+        }
+        a {
+            font-size: 13px;
+            font-weight: 600;
+            color: $link !important;
+        }
+    }
+    .show-more {
+        border-bottom: none !important;
+        border-bottom: none;
+        padding: 11px 14px 11px !important;
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $link;
+        }
+    }
+}

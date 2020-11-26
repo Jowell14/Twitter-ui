@@ -1,0 +1,13 @@
+%btn {
+    font-size: 16px !important;
+    font-weight: bold;
+    padding: 12px;
+    width: 75% !important;
+    margin-left: 40px;
+    color: #fff;
+    background: $twitter-btn !important;
+    border: none;
+    &:hover {
+        background-color: lighten($twitter-btn, 10%) !important;
+    }
+}

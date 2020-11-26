@@ -1,0 +1,11 @@
+%right-style {
+    border-bottom: 1px solid $border-color;
+    padding: 7px 15px 7px;
+    text-align: start;
+}
+
+%trend-style {
+    background-color: $trends;
+    margin-top: 15px;
+    border-radius: 16px;
+}

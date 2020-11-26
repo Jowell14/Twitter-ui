@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% ' system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif';
+  background: #15202b !important;
+  color: #ece8e8 !important;
+  font-size: 19px !important;
+}
+
+.trends .trending-topics,
+.trends .show-more,
+.trends .suggestions,
+.who-to-follow .trending-topics,
+.who-to-follow .show-more,
+.who-to-follow .suggestions {
+  border-bottom: 1px solid #484949;
+  padding: 7px 15px 7px;
+  text-align: start;
+}
+
+.trends,
+.who-to-follow {
+  background-color: #1a2835;
+  margin-top: 15px;
+  border-radius: 16px;
+}
+
+.left-nav .left-nav-content .account-switcher-btn {
+  font-size: 16px !important;
+  font-weight: bold;
+  padding: 12px;
+  width: 75% !important;
+  margin-left: 40px;
+  color: #fff;
+  background: #1DA1F2 !important;
+  border: none;
+}
+
+.left-nav .left-nav-content .account-switcher-btn:hover {
+  background-color: #4db5f5 !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% ' system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif';
+  background: #15202b !important;
+  color: #ece8e8 !important;
+  font-size: 19px !important;
+}
+
+.left-nav,
+.middle-section,
+.right-nav {
+  height: 100vh;
+}
+
+.left-nav {
+  border-right: 1px solid #484949 !important;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  position: relative !important;
+}
+
+.left-nav .logo {
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 20px 50px;
+}
+
+.left-nav .left-nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  text-align: center;
+}
+
+.left-nav .left-nav-content ul {
+  margin-left: 50px;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 0 !important;
+}
+
+.left-nav .left-nav-content ul li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.left-nav .left-nav-content ul i {
+  margin-right: 5px;
+}
+
+.left-nav .left-nav-content ul a {
+  text-decoration: none;
+  color: #ece8e8;
+  margin-left: 15px;
+  font-weight: 700 !important;
+  font-size: 20px;
+  text-align: center;
+  transition: color ease-in 0.1s;
+}
+
+.left-nav .left-nav-content ul a:hover {
+  color: #1DA1F2;
+}
+
+.left-nav .left-nav-content .center {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.left-nav .account-profile {
+  display: flex;
+  width: 70%;
+  position: absolute;
+  bottom: 20px;
+  justify-content: space-between;
+  margin-left: 40px;
+  padding: 10px;
+  border-radius: 25px;
+  height: 50px;
+}
+
+.left-nav .account-profile:hover {
+  background-color: #263a4d !important;
+}
+
+.left-nav .account-profile .account-profile-details {
+  display: flex;
+}
+
+.left-nav .account-profile .account-profile-details .account-profile-pic img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.left-nav .account-profile .account-profile-details .profile-name {
+  margin-left: 10px;
+}
+
+.left-nav .account-profile .account-profile-details .profile-name h5 {
+  margin-bottom: 0;
+  font-weight: bolder !important;
+  font-size: 16px;
+}
+
+.left-nav .account-profile .account-profile-details .profile-name p {
+  font-weight: 600 !important;
+  font-size: 14px;
+  margin-top: 0;
+  color: #9b9c9c;
+}
+
+.middle-section {
+  border-right: 1px solid #484949 !important;
+  padding: 0 !important;
+}
+
+.middle-section .middle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+  border-bottom: 1px solid #484949 !important;
+}
+
+.middle-section .middle-header .middle-heading-text {
+  color: #ece8e8;
+  font-weight: bolder !important;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.middle-section .middle-header .star {
+  margin-right: 15px;
+}
+
+.right-nav {
+  margin-top: 5px;
+  padding: 0 64px 0 40px !important;
+}
+
+.right-nav .search-quinera {
+  position: relative;
+}
+
+.right-nav .search-quinera .search {
+  background-color: #283747;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 60px;
+  color: #ece8e8;
+  font-size: 14px;
+  width: 100%;
+}
+
+.right-nav .search-quinera i {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  color: #ece8e8;
+}
+
+.trends .trends-header,
+.trends .who-to-follow-header,
+.who-to-follow .trends-header,
+.who-to-follow .who-to-follow-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #484949;
+  padding: 10px 13px 5px;
+}
+
+.trends .trends-header h5,
+.trends .who-to-follow-header h5,
+.who-to-follow .trends-header h5,
+.who-to-follow .who-to-follow-header h5 {
+  letter-spacing: 1;
+  font-weight: 800;
+  font-size: 20px;
+  color: #ece8e8;
+}
+
+.trends .trending-topics p,
+.trends .show-more p,
+.trends .suggestions p,
+.who-to-follow .trending-topics p,
+.who-to-follow .show-more p,
+.who-to-follow .suggestions p {
+  color: #657786;
+  font-size: 13px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.trends .trending-topics h5,
+.trends .show-more h5,
+.trends .suggestions h5,
+.who-to-follow .trending-topics h5,
+.who-to-follow .show-more h5,
+.who-to-follow .suggestions h5 {
+  font-weight: 800;
+  color: #ece8e8;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.trends .trending-topics h5:hover,
+.trends .show-more h5:hover,
+.trends .suggestions h5:hover,
+.who-to-follow .trending-topics h5:hover,
+.who-to-follow .show-more h5:hover,
+.who-to-follow .suggestions h5:hover {
+  color: #1DA1F2;
+}
+
+.trends .trending-topics a,
+.trends .show-more a,
+.trends .suggestions a,
+.who-to-follow .trending-topics a,
+.who-to-follow .show-more a,
+.who-to-follow .suggestions a {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1DA1F2 !important;
+}
+
+.trends .show-more,
+.who-to-follow .show-more {
+  border-bottom: none !important;
+  border-bottom: none;
+  padding: 11px 14px 11px !important;
+}
+
+.trends .show-more a,
+.who-to-follow .show-more a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1DA1F2;
+}
